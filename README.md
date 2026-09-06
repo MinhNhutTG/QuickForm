@@ -13,13 +13,21 @@ Mini app nối input vào mẫu prompt có chỗ trống (`{{tên_biến}}`). M�
 
 ## Deploy / cập nhật
 
-Project đã được link với Vercel (`.vercel/project.json`). Từ thư mục này:
+Repo này đã được nối với project Vercel (qua `vercel git connect`) và đẩy lên GitHub tại https://github.com/MinhNhutTG/QuickForm. Từ giờ, mỗi lần:
+
+```bash
+git add .
+git commit -m "mô tả thay đổi"
+git push
+```
+
+Vercel sẽ tự động build và deploy bản mới lên production — không cần chạy `vercel --prod` bằng tay nữa. Vào tab **Deployments** trong Vercel Dashboard để xem tiến trình/log của từng lần deploy.
+
+Nếu vẫn muốn deploy thủ công từ máy (bỏ qua Git), vẫn có thể chạy:
 
 ```bash
 vercel --prod
 ```
-
-Vercel tự chạy `npm install` (cài `@vercel/blob`) rồi deploy cả trang tĩnh lẫn API. Không cần bước cấu hình `config.js` hay tạo project ở dịch vụ ngoài nào nữa.
 
 ## Chạy thử ở máy local
 
