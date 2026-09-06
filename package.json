@@ -1,0 +1,11 @@
+{
+  "name": "ghep-prompt",
+  "version": "1.0.0",
+  "description": "Mini app nối input vào mẫu prompt có chỗ trống, lưu mẫu dùng chung trên server (Node.js + file JSON qua Vercel Blob), deploy trên Vercel (free tier).",
+  "private": true,
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vercel/blob": "^2.8.0"
+  }
+}
